@@ -1,0 +1,22 @@
+#mainFormDiv{
+    width: 400px;
+    border: 1px solid black;
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+}
+
+.formDivs{
+    margin: 20px;
+    text-align:center;
+}
+
+#resultBox{
+    width: 400px;
+    border: 1px solid black;
+    padding: 25px;
+    margin-top: 50px;
+    margin-right: 150px;
+    float: right;
+}

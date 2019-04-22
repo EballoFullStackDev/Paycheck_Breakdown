@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Paycheck Breakdown</title>
+  </head>
+  <body>
+    <div class="row">
+      <div id="mainFormDiv">
+        <form id="paycheckForm">
+          <div class ='formDivs'>
+            <label for="grossIncome">Gross Income:</label>
+          </div>
+          <div class ='formDivs'>
+            <input
+              id="grossIncome"
+              name="grossIncome"
+              type="number"
+              placeholder="Gross Income"
+              step=".01"
+              required
+            />
+          </div>
+          <div class ='formDivs'> 
+            <label for="paySchedule">Pay Schedule on Check:</label>
+          </div>
+          <div class ='formDivs'>
+            <select id="paySchedule" name="paySchedule">
+              <option value="weekly">Weekly</option>
+              <option value="biweekly">Bi-Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="bimonthly">Bi-Monthly</option>
+            </select>
+            <ul>
+              <li>
+                <small>Weekly pay is 52 paychecks per year</small>
+              </li>
+              <li>
+                <small>Bi-weekly pay is 26 paychecks per year.</small>
+              </li>
+              <li>
+                <small>Semi-monthly pay is 24 paychecks per year. </small>
+              </li>
+              <li>
+                <small>Monthly pay is 12 paychecks per year.</small>
+              </li>
+            </ul>
+          </div>
+          <div class ='formDivs'>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div id ='resultBox'></div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
